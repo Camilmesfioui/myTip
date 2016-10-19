@@ -1,22 +1,22 @@
 <ion-view view-title="myTip">
     <ion-content class="padding">
+        <div class="text-center">
+            {{ error }}
+        </div>
         <form ng-submit="calculate(price)">
             <div class="list list-inset">
                 <label class="item item-input item-stacked-label">
                     <span class="input-label">Prix de la commande :</span>
                     <input type="text" placeholder="0€" ng-model="price">
                 </label>
+                Taux du pourboire : {{ rate }}%
                 <button class="button button-block button-positive" type="submit">Calculer le pourboire</button>
             </div>
         </form>
-        Taux du pourboire : {{ rate }}
 
+        Pourboire : {{ tip }}€
         <br>
-        <br>
-
-        Pourboire : {{ tip }}
-        <br>
-        Total : {{ total }}
+        Total : {{ total }}€
 
     </ion-content>
 </ion-view>

@@ -47,7 +47,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                         templateUrl: 'templates/tab-home.html',
                         controller: 'Ctrl'
                     }
-                }
+                },
+                cache : false
             })
 
             .state('tab.settings', {
@@ -57,7 +58,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                         templateUrl: 'templates/tab-settings.html',
                         controller: 'Ctrl'
                     }
-                }
+                },
+                cache: false
             });
 
 
