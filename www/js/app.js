@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 views: {
                     'tab-home': {
                         templateUrl: 'templates/tab-home.html',
-                        controller: 'HomeCtrl'
+                        controller: 'Ctrl'
                     }
                 }
             })
@@ -55,7 +55,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 views: {
                     'tab-settings': {
                         templateUrl: 'templates/tab-settings.html',
-                        controller: 'SettingsCtrl'
+                        controller: 'Ctrl'
                     }
                 }
             });

@@ -1,5 +1,14 @@
-<ion-view view-title="Settings">
+<ion-view view-title="Réglages">
     <ion-content class="padding">
-        <h2>Tracteur</h2>
+        <form ng-submit="changeRate(rate)">
+            <div class="list list-inset">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Pourcentage :</span>
+                    <input type="text" placeholder="0%" ng-model="rate">
+                </label>
+                <button class="button button-block button-positive" type="submit">Enregistrer</button>
+            </div>
+        </form>
+
     </ion-content>
 </ion-view>
